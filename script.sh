@@ -123,7 +123,7 @@ echo
 ls -1 lab0/purugly5/ 2>/tmp/errors
 
 echo
-cat -n $(ls -pr lab0/*/*/* | grep "6$")
+cat -n $(ls -pr lab0/* lab0/*/* lab0/*/*/* | grep "6$")
 
 echo
 cat lab0/simisage8 -n 2>/dev/null | grep -v "ck"
