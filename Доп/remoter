@@ -1,0 +1,21 @@
+'\" t
+
+.TH "REMOTER" "8" "23\ \&November\ \&2024" "REMOTER 1.0.0" "REMOTER"
+
+.SH "NAME"
+REMOTER - This utility allows you to run scripts remotely (\fBhelios\fR)
+.SH "SYNOPSIS"
+\fBremoter\fR [\fBFILE\fR] [\fBARGUMENTS...\fR]
+.SH "DESCRIPTION"
+\fBremoter\fR is a utility that accepts arguments and a file name as input. After that, the utility establishes an SSH connection to the \fBhelios\fR host and executes the specified Bash file with the passed arguments on the remote server. This script allows you to run remote Bash scripts on the helios server with the transmission of parameters.
+.SH "OPTIONS"
+\fB[FILE]\fR
+.RS 4
+The first argument should be the filename
+.RE
+.PP
+\fB[ARGUMENTS]\fR
+.RS 4
+The arguments that come after the first one will be passed as an argument to the script that you have run
+.RE
+.SH "Starchenko"
